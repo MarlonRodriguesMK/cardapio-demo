@@ -122,8 +122,9 @@ export default function App() {
         <div className="brand">
           <div className="logo">🍽️</div>
           <div>
-            <div className="title">Cardápio Digital</div>
-            <div className="subtitle">Pedido rápido pelo WhatsApp</div>
+            <div className="title">Cardápio Express</div>
+<div className="subtitle">Cardápio digital premium • Pedido no WhatsApp</div>
+
           </div>
         </div>
 
@@ -272,8 +273,9 @@ export default function App() {
             </div>
 
             <button className="btnPrimary" onClick={sendToWhatsApp}>
-              Enviar pedido no WhatsApp
-            </button>
+  Peça agora no WhatsApp
+</button>
+
 
             <div className="footnote">
               Faça seu pedido e participe dos nossos sorteios !
