@@ -1,3 +1,4 @@
+import logo from "./assets/logo.png";
 import { useMemo, useState } from "react";
 import { menu, WHATSAPP_NUMBER } from "./data/menu";
 import "./styles.css";
@@ -120,7 +121,10 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand">
-          <div className="logo">🍽️</div>
+          <div className="logo">
+  <img src={logo} alt="Cardápio Express" style={{ width: "28px" }} />
+</div>
+
           <div>
             <div className="title">Cardápio Express</div>
 <div className="subtitle">Cardápio digital premium • Pedido no WhatsApp</div>
@@ -159,6 +163,10 @@ export default function App() {
           <div className="grid">
             {filteredMenu.items.map((item) => (
               <div key={item.id} className="card">
+                {item.image && (
+  <img src={item.image} alt={item.name} className="cardImg" />
+)}
+
                 <div className="cardTop">
                   <div className="cardTitle">{item.name}</div>
                   <div className="price">{formatBRL(item.price)}</div>
